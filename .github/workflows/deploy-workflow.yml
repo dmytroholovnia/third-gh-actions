@@ -1,8 +1,9 @@
 name: Deploy solution
 on:
-  #push:
+  push:
   schedule:
-    - cron: '* * * * *'
+    # Run every Thursday
+    - cron: '0 0 * * 4'
 
 jobs:
   lint:
