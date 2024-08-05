@@ -2,7 +2,8 @@ name: Deploy solution
 on:
   #push:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '* * * * *'
+
 jobs:
   lint:
     runs-on: ubuntu-latest
